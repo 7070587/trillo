@@ -2,7 +2,7 @@
     max-width: 120rem;
     margin: 8rem auto;
     background-color: var(--color-grey-light-1);
-    box-shadow: 0 2rem 6rem var(--shadow-dark);
+    box-shadow: var(--shadow-dark);
     min-height: 600px;
 }
 
@@ -10,6 +10,10 @@
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .content {
@@ -24,6 +28,6 @@
 }
 
 .hotel-view {
-    background-color: #fff;
+    background-color: cornflowerblue;
     flex: 1;
 }
