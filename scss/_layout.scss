@@ -37,26 +37,3 @@
 
     height: 80rem;
 }
-
-// side nav
-.side-nav {
-    &__item {
-    }
-
-    &__link {
-        text-decoration: none;
-    }
-
-    &__icon {
-        width: 1.75rem;
-        height: 1.75rem;
-    }
-}
-
-// legal
-.legal {
-    font-size: 1.2rem;
-    text-align: center;
-    color: var(--color-grey-light-4);
-    padding: 2.5rem;
-}
