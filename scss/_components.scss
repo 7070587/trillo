@@ -182,3 +182,46 @@
     color: var(--color-grey-light-4);
     padding: 2.5rem;
 }
+
+// gallery
+.gallery {
+    display: flex;
+
+    &__item {
+    }
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
+
+// overview
+.overview {
+    display: flex;
+
+    &__heading {
+    }
+
+    &__stars {
+        // flex: 1;
+        margin-right: auto;
+        // background-color: darkseagreen;
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__location {
+    }
+
+    &__rate-average {
+    }
+
+    &__rate-count {
+    }
+}
