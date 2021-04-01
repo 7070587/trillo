@@ -30,6 +30,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -142,11 +147,27 @@ body {
   list-style: none;
   margin-top: 3.5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .side-nav {
+    display: flex;
+    margin: 0;
+  }
+}
 .side-nav__item {
   position: relative;
 }
 .side-nav__item:not(:last-child) {
   margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .side-nav__item:not(:last-child) {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .side-nav__item {
+    flex: 1;
+  }
 }
 .side-nav__item::before {
   content: "";
@@ -177,6 +198,12 @@ body {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 56.25em) {
+  .side-nav__link:link, .side-nav__link:visited {
+    justify-content: center;
+    padding: 2rem;
+  }
+}
 .side-nav__icon {
   width: 1.75rem;
   height: 1.75rem;
@@ -189,6 +216,11 @@ body {
   text-align: center;
   color: var(--color-grey-light-4);
   padding: 2.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .legal {
+    display: none;
+  }
 }
 
 .gallery {
@@ -326,6 +358,9 @@ body {
 .recommend__count {
   margin-right: auto;
 }
+.recommend__friends {
+  display: flex;
+}
 .recommend__photo {
   box-sizing: content-box;
   height: 4.25rem;
@@ -334,7 +369,7 @@ body {
   border: 3px solid #fff;
 }
 .recommend__photo:not(:last-child) {
-  margin-right: -1.5rem;
+  margin-right: -2rem;
 }
 
 .review {
@@ -344,6 +379,12 @@ body {
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+}
+@media only screen and (max-width: 56.25em) {
+  .review {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 }
 .review__text {
   margin-bottom: 2rem;
@@ -395,6 +436,12 @@ body {
   padding: 3.5rem 0;
   text-align: center;
 }
+@media only screen and (max-width: 56.25em) {
+  .cta {
+    padding: 2.5rem 0;
+    margin-bottom: 2rem;
+  }
+}
 .cta__book-now {
   font-size: 2rem;
   font-weight: 400;
@@ -444,11 +491,18 @@ body {
 }
 
 .container {
-  max-width: 128rem;
+  max-width: 120rem;
   margin: 8rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
-  min-height: 600px;
+  min-height: 50rem;
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .header {
@@ -462,6 +516,11 @@ body {
 
 .content {
   display: flex;
+}
+@media only screen and (max-width: 56.25em) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -483,6 +542,11 @@ body {
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
 }
+@media only screen and (max-width: 56.25em) {
+  .detail {
+    padding: 3rem;
+  }
+}
 
 .description {
   background-color: #fff;
@@ -490,6 +554,12 @@ body {
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .description {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }
 
 .user-reviews {
