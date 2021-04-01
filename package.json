@@ -3,6 +3,7 @@
     "version": "1.00.00",
     "description": "Landing page for trillo",
     "main": "index.js",
+    
     "scripts": {
         "start": "npm-run-all --parallel live watch",
         "live": "live-server",
