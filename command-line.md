@@ -22,9 +22,17 @@ sass [<input.css>:<output.css>] [<input/>:<output/>]...
 ```
 
 ## package.json script
-auto compile scss --> css
+auto open live server and compile scss --> css
 ```bash
-"start": "sass --watch scss/main.scss:css/style.css",
+"start": "live-server && sass --watch scss/main.scss:css/style.css",
+```
+auto open live server
+```bash
+  "live": "live-server", 
+```
+compile scss --> css
+```bash
+    "watch": "sass --watch scss/main.scss:css/style.css",
 ```
 
 compile scss --> css
